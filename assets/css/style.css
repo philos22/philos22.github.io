@@ -15,6 +15,8 @@
 
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+/*google Cookie Font*/
+@import url(https://fonts.googleapis.com/css?family=Cookie);
 
 html,
 button,
@@ -249,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/back.jpg) no-repeat center top;
+	background: url(../img/cuba.jpg) no-repeat center top;
 	margin-top: 0px;
 	padding-top:120px;
 	text-align:center;
@@ -271,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #headerwrap h1 {
 	color:#ffffff;
-	margin-top: 90px;
+	margin-top: 190px;
 	padding-bottom: 30px;
 	letter-spacing: 8px;
 	font-size: 100px;
@@ -310,6 +312,15 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 38px 0 38px;
 	background: url(../img/name-zig.png) 0 0 no-repeat;
 	background-size: 73px 17px;
+}
+
+.name-fancy {
+	width: 150px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../img/fancy_divider.png) 0 0 no-repeat;
 }
 
 .name-desc h2 {
@@ -493,4 +504,16 @@ h1, h2, h3, h4, h5, h6 {
 #workwrap i,
 #volunteer-wrap i {
 	font-size: 60px;
+}
+
+#self-intro-wrapper .container .row {
+	padding-top: 50px;
+}
+
+#self-intro-wrapper .container .row {
+	padding-top: 50px;
+}
+
+#self-intro-wrapper .container h2 {
+	text-align: center;
 }
