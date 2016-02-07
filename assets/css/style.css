@@ -242,13 +242,13 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/back.jpg) no-repeat center top;
+	background: url(../img/back3.jpg) no-repeat center top;
 	margin-top: 0px;
 	padding-top:120px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 700px;
+	min-height: 900px;
 	height: 100%;
 	
     -webkit-background-size: 100%;
@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #headerwrap .container .row .col-md-8 h1 {
-	color:#737373;
+	color:#d9d9d9;
 	margin-top: 190px;
 	padding-bottom: 30px;
 	letter-spacing: 2px;
