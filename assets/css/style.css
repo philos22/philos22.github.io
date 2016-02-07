@@ -1,13 +1,3 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://Alvarez.is
- *
- * Project Name: NYC Design
- * Version: 1.0
- * Date: 04-20-2014
- * URL: 
- */
-
 
 /* ==========================================================================
    Base Styles, Bootstrap Modifications & Fonts Import
@@ -17,6 +7,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 /*google Cookie Font*/
 @import url(https://fonts.googleapis.com/css?family=Cookie);
+
 
 html,
 button,
@@ -251,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/cuba.jpg) no-repeat center top;
+	background: url(../img/back.jpg) no-repeat center top;
 	margin-top: 0px;
 	padding-top:120px;
 	text-align:center;
@@ -271,14 +262,14 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
-#headerwrap h1 {
+#headerwrap .container .row .col-md-8 h1 {
 	color:#ffffff;
 	margin-top: 190px;
 	padding-bottom: 30px;
-	letter-spacing: 8px;
-	font-size: 100px;
-	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 90px;
 	text-shadow: 2px 2px 2px #000;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* About Wrap & Conf */
@@ -318,6 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 150px;
 	height: 50px;
 	margin-top: 10px;
+	margin-bottom: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	background: url(../img/fancy_divider.png) 0 0 no-repeat;
@@ -336,6 +328,20 @@ h1, h2, h3, h4, h5, h6 {
 	background-position: 50% 0;
 	background-repeat: no-repeat;
 	height: 450px;
+	position: relative;
+}
+.sep-md {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	height: 150px;
+	position: relative;
+}
+.sep-sm {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	height: 70px;
 	position: relative;
 }
 .about {
@@ -430,9 +436,13 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 25px;
 }
 
-#contactwrap p {
+#contactwrap .container .row a {
 	color: #f2f2f2;
+	display: block;
+	text-align: center;
 }
+/*edited for Back to Top*/
+
 
 #contactwrap small {
 	font-size: 13px;
@@ -454,6 +464,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   overflow: hidden;
   background-color: #2f2f2f;
+  margin-top: 20px;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
@@ -505,15 +516,38 @@ h1, h2, h3, h4, h5, h6 {
 #volunteer-wrap i {
 	font-size: 60px;
 }
-
-#self-intro-wrapper .container .row {
-	padding-top: 50px;
-}
-
-#self-intro-wrapper .container .row {
-	padding-top: 50px;
-}
-
+/*Welcome phrase centered and padded*/
 #self-intro-wrapper .container h2 {
 	text-align: center;
+	margin-bottom: 50px;
+}
+#self-intro-wrapper .container .row .col-lg-12 .col-md-4 blockquote {
+	font-family: Georgia, serif;
+}
+/*Intro paragraph - more readable*/
+#self-intro-wrapper .container .row .col-lg-12 .col-md-4 p {
+	font-size: 20px;
+	padding-top: 15px; 
+	line-height:25px
+}
+/*End of intro - signature*/
+#self-intro-wrapper .container .row .col-lg-12 .col-md-4 h3 {
+	text-align: right;
+	margin-top: 100px;
+	margin-bottom: none;
+	font-family: "MonsieurLaDoulaise-Regular", italic;
+	font-size: 50px;
+}
+/*Intro-portrait round corners*/
+#about_img img {
+    border-radius: 50%;
+}
+/*custom elegant separator*/
+.elegantdivide {
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	height: 100px;
+	background-repeat: no-repeat;
+	position: relative;
+	background: url(../img/black-divider3.jpg) no-repeat center;
 }

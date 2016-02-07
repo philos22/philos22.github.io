@@ -2409,7 +2409,23 @@ input[type="button"].btn-block {
 }
 @font-face {
   font-family: AurulentSans-BoldItalic;
-  src: url('..fonts/AurulentSans-BoldItalic.otf');
+  src: url('../fonts/AurulentSans-BoldItalic.otf');
+}
+@font-face {
+  font-family: Cantarell-Regular;
+  src: url('../fonts/Cantarell-Regular.ttf');
+}
+
+@font-face {
+  font-family: "extravaganzza-extra-bold";
+  src: url('../fonts/extravaganzza-extra-bold.ttf');
+}
+@font-face {
+  font-family: "MonsieurLaDoulaise-Regular";
+  src: url('../fonts/MonsieurLaDoulaise-Regular.eot');
+  src: url('../fonts/MonsieurLaDoulaise-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MonsieurLaDoulaise-Regular.woff') format('woff'),
+       url('../fonts/MonsieurLaDoulaise-Regular.ttf') format('truetype');
 }
 
 .glyphicon {
@@ -5461,6 +5477,9 @@ button.close {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   line-height: 1;
+}
+.carousel-inner > .item > img {
+  max-width: 100%;
 }
 .carousel-inner > .active,
 .carousel-inner > .next,
