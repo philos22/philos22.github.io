@@ -1,0 +1,22 @@
+<table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
+  <meta>
+    <author>You</author>
+    <documentationURL>None</documentationURL>
+    <description>Uses the BART ETA feed.</description>
+    <sampleQuery>SELECT * FROM {table} WHERE orig="12th"</sampleQuery>
+    <sampleQuery>SELECT * FROM {table} WHERE orig="12th" where orig={orig}</sampleQuery>
+    <sampleQuery>SELECT * FROM {table} WHERE orig="12th" where orig={orig} and key={key}</sampleQuery>
+  </meta>
+  <bindings>
+    <select itemPath="root.station" produces="XML">
+      <urls>
+        <url>http://api.bart.gov/api/etd.aspx</url>
+      </urls>
+      <inputs>
+      <key id="orig" as="orig" type="xs:string" paramType="query" required="false" default="ALL" />
+      <key id="key" as="key" type="xs:string" paramType="query" required="true" default="MW9S-E7SL-26DU-VV8V" />
+      <key id="cmd" as="cmd" type="xs:string" paramType="query" required="false" default="etd" />
+      </inputs>
+    </select>
+  </bindings>
+</table>
